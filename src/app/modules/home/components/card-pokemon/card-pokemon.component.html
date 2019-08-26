@@ -1,0 +1,26 @@
+<div class="card mb-3 h-100 shadow border-0 position-relative"
+  [ngClass]="typesPokemon[0] + ' ' + typesPokemon[1] + ' ' + 'gradient'" style="max-width: 540px;">
+  <app-spinner [show]="loading" ></app-spinner>
+  <div class="row no-gutters h-100">
+    <div class="col-12 no-gutters d-flex justify-content-center" *ngIf="urlImage">
+      <img [src]="urlImage" class="card-img" [alt]="name">
+    </div>
+    <div class="col-12 no-gutters description-card">
+      <div class="card-body">
+        <h5 class="card-title">#{{pokemon?.id}} {{name | titlecase}}</h5>
+        <ul id="type-pokemon" style="padding:0;">
+          <div style="display:inline-block;" *ngFor="let type of typesPokemon">
+            <li style="display:inline-block;" [ngClass]="[type,'type']">
+              {{type | titlecase}}
+            </li>
+          </div>
+        </ul>
+        <p class="card-text">{{infoPokemon | descriptionReduced:100:0}}</p>
+        <hr>
+        <p *ngIf="pokemon?.id" class="card-text more-info float-right" >
+          <a [routerLink]="['/pokemon', pokemon?.id]" class="text-muted stretched-link">More Info</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

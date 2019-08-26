@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font: 14px Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased !important;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background: #fafafa;
+}
