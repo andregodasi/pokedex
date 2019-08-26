@@ -1,5 +1,9 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
+:root {
+  --color-default: #ce1030;
+}
+
 
 * {
   margin: 0;
@@ -21,5 +25,5 @@ body {
   flex-direction: column;
   height: 100%;
   width: 100%;
-  background: #fafafa;
+  background: dedede;
 }

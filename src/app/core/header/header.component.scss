@@ -1,4 +1,22 @@
 header {
   height: 60px;
-  background: red;
+  background: var(--color-default);
+}
+
+.img-main {
+  widows: 50px;
+  height: 50px;
+}
+
+.img-small {
+  height: 15px;
+  width: 15px;
+  margin-right: 3px;
+}
+
+.container-imgs {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 5px;
+  padding-left: 10px;
 }
