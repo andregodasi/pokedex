@@ -8,12 +8,12 @@ const routes: Routes = [
   {
     path: 'home',
     component: HeaderComponent,
-    loadChildren: () => import(`./modules/home/home.module`).then(m => m.HomeModule)
+    loadChildren: './modules/home/home.module#HomeModule'
   },
   {
     path: 'pokemon',
     component: HeaderComponent,
-    loadChildren: () => import(`./modules/pokemon-detail/pokemon-detail.module`).then(m => m.PokemonDetailModule)
+    loadChildren: './modules/pokemon-detail/pokemon-detail.module#PokemonDetailModule'
   }
 ];
 
