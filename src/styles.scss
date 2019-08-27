@@ -4,7 +4,6 @@
   --color-default: #ce1030;
 }
 
-
 * {
   margin: 0;
   padding: 0;
@@ -210,4 +209,192 @@ body {
 
 .gradient {
   background-image: linear-gradient(var(--primary), var(--secondary));
+}
+
+// color
+.fairy-color {
+  color: #FAADFF;
+}
+
+.steel-color {
+  color: #C4C2DA;
+}
+
+.dark-color {
+  color: #8E6955;
+}
+
+.dragon-color {
+  color: #8A76FF;
+}
+
+.ice-color {
+  color: #96F1FF;
+}
+
+.psychic-color {
+  color: #FA65B5;
+}
+
+.electric-color {
+  color: #FDE53C;
+}
+
+.ghost-color {
+  color: #7773D3;
+}
+
+.bug-color {
+  color: #C2D21F;
+}
+
+.rock-color {
+  color: #CBBB71;
+}
+
+.ground-color {
+  color: #E5C654;
+}
+
+.poison-color {
+  color: #A65B9E;
+}
+
+.fighting-color {
+  color: #A85645;
+}
+
+.water-color {
+  color: #56AEFF;
+}
+
+.grass-color {
+  color: #8DD851;
+}
+
+.fire-color {
+  color: #FA5543;
+}
+
+.normal-color {
+  color: #BCBCAE;
+}
+
+.flying-color {
+  color: #79A4FF;
+}
+
+// icons
+.sidebar-menu {
+  background: url(./assets/img/icons/sidebar-menu.png) no-repeat !important;
+  display: inline-block;
+  margin-right: 2px;
+}
+
+.bug-icon {
+  background-position: -2px -1540px!important;
+  width: 23px;
+  height: 23px;
+}
+
+.dark-icon {
+  background-position: -2px -1565px!important;
+  width: 23px;
+  height: 23px;
+}
+
+.dragon-icon {
+  background-position: -2px -1590px!important;
+  width: 23px;
+  height: 23px;
+}
+
+.electric-icon {
+  background-position: -2px -1615px!important;
+  width: 23px;
+  height: 23px;
+}
+
+.grass-icon {
+  background-position: -2px -1765px!important;
+  width: 23px;
+  height: 23px;
+}
+
+.fairy-icon {
+  background-position: -2px -1640px!important;
+  width: 23px;
+  height: 23px;
+}
+
+.fighting-icon {
+  background-position: -2px -1665px!important;
+  width: 23px;
+  height: 23px;
+}
+
+.fire-icon {
+  background-position: -2px -1690px!important;
+  width: 23px;
+  height: 23px;
+}
+
+.flying-icon {
+  background-position: -2px -1715px!important;
+  width: 23px;
+  height: 23px;
+}
+
+.ghost-icon {
+  background-position: -2px -1740px!important;
+  width: 23px;
+  height: 23px;
+}
+
+.ground-icon {
+  background-position: -2px -1790px!important;
+  width: 23px;
+  height: 23px;
+}
+
+.ice-icon {
+  background-position: -2px -1815px!important;
+  width: 23px;
+  height: 23px;
+}
+
+.normal-icon {
+  background-position: -2px -1965px!important;
+  width: 23px;
+  height: 23px;
+}
+
+.poison-icon {
+  background-position: -2px -1990px!important;
+  width: 23px;
+  height: 23px;
+}
+
+.psychic-icon {
+  background-position: -2px -2140px!important;
+  width: 23px;
+  height: 23px;
+}
+
+.rock-icon {
+  background-position: -2px -2165px!important;
+  width: 23px;
+  height: 23px;
+}
+
+.steel-icon {
+  background-position: -2px -2190px!important;
+  width: 23px;
+  height: 23px;
+}
+
+.water-icon {
+  background-position: -2px -2215px!important;
+  width: 23px;
+  height: 23px;
 }

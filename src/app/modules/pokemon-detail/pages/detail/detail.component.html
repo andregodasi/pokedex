@@ -6,13 +6,13 @@
         <p id="description-pokemon">{{descriptionPokemon}}</p>
         <ul id="type-pokemon" style="padding:0;">
           <div *ngFor="let type of typesPokemon" class="types d-block">
-            <li class="border d-block" [ngClass]="[type,'type']">
-              {{type}}
+            <li class="d-flex justify-content-center align-items-center border shadow bg-white" [ngClass]="[type+'-color','type']">
+              <span class="sidebar-menu {{type}}-icon"></span> {{type | titlecase}}
             </li>
           </div>
           <div class="types d-block">
             <i title="Favorite" (click)="changeFavorite(pokemonJSON)"
-              class="favorite {{pokemonJSON?.favorite ? 'fas fa-star' : 'far fa-star'}} text-white"></i>
+              class="favorite {{pokemonJSON?.favorite ? 'fas fa-star' : 'far fa-star' }} fa-lg text-white"></i>
           </div>
         </ul>
       </div>

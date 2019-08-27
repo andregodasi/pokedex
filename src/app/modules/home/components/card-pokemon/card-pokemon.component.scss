@@ -13,20 +13,21 @@
 
 .description-card {
   background: #fff;
-  border-radius: 15px 15px 0 0;
+  border-radius: 30px;
 }
 
 .type {
-  font-size:12px;
-  color: white;
-  font-weight: 600;
+  font-size:14px;
+  font-weight: 700;
   border-radius: 30px;
-  max-width:75px;
   padding: 3px 5px;;
   text-align: center;
-  // Falta colocar border no texto
 }
 
 .favorite {
   cursor: pointer;
+}
+
+.container-card {
+  border-radius: 30px;
 }
