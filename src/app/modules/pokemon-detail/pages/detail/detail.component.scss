@@ -73,7 +73,6 @@
 
 #main-nav {
   display: flex;
-  justify-content: space-between;
 }
 
 #main-nav div {
@@ -118,6 +117,14 @@
   padding: 3px;
   text-align: center;
 
+}
+
+.h-footer {
+  height: 40px;
+}
+
+.container-detail {
+  min-height: calc(100% - 40px);
 }
 
 
