@@ -11,9 +11,9 @@ const routes: Routes = [
     loadChildren: () => import(`./modules/home/home.module`).then(m => m.HomeModule)
   },
   {
-    path: 'pokemon/:cod',
+    path: 'pokemon',
     component: HeaderComponent,
-    loadChildren: () => import(`./modules/home/home.module`).then(m => m.HomeModule)
+    loadChildren: () => import(`./modules/pokemon-detail/pokemon-detail.module`).then(m => m.PokemonDetailModule)
   }
 ];
 

@@ -27,6 +27,7 @@ export class CardPokemonComponent implements OnInit {
     this.loading = true;
     this.pokemonService.getPokemonByNome(this.name).subscribe(pokemon => {
       this.pokemon = pokemon;
+      this.pokemon.favorite = this.pokemonService.verifyFavorite(pokemon.id);
       this.getType(pokemon);
       this.pokemonService.getPokemonSpecies(pokemon.id).subscribe(specie => {
         this.getInfo(specie);
@@ -82,6 +83,16 @@ export class CardPokemonComponent implements OnInit {
     pokemon.types.map((t) => {
       this.typesPokemon.push(t.type.name);
     });
+  }
+
+  changeFavorite(pokemon) {
+    if (pokemon.favorite) {
+      pokemon.favorite = false;
+      this.pokemonService.removeFavorite(pokemon.id);
+    } else {
+      pokemon.favorite = true;
+      this.pokemonService.addFavorite(pokemon.id);
+    }
   }
 
 }

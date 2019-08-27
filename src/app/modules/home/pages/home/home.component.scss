@@ -9,3 +9,9 @@
 .more-info {
   cursor: pointer;
 }
+
+::ng-deep {
+  .ngx-pagination .current {
+    background: var(--color-default)!important;
+  }
+}

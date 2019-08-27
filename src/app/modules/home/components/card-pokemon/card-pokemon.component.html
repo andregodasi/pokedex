@@ -7,10 +7,11 @@
     </div>
     <div class="col-12 no-gutters description-card">
       <div class="card-body">
-        <h5 class="card-title">#{{pokemon?.id}} {{name | titlecase}}</h5>
+        <h5 class="card-title">#{{pokemon?.id}} {{name | titlecase}}
+          <i title="Favorite" (click)="changeFavorite(pokemon)" class="favorite {{pokemon?.favorite ? 'fas fa-star' : 'far fa-star'}}"></i></h5>
         <ul id="type-pokemon" style="padding:0;">
-          <div style="display:inline-block;" *ngFor="let type of typesPokemon">
-            <li style="display:inline-block;" [ngClass]="[type,'type']">
+          <div class="d-inline-block" *ngFor="let type of typesPokemon">
+            <li class="d-inline-block" [ngClass]="[type,'type']">
               {{type | titlecase}}
             </li>
           </div>
@@ -18,7 +19,7 @@
         <p class="card-text">{{infoPokemon | descriptionReduced:100:0}}</p>
         <hr>
         <p *ngIf="pokemon?.id" class="card-text more-info float-right" >
-          <a [routerLink]="['/pokemon', pokemon?.id]" class="text-muted stretched-link">More Info</a>
+          <a [routerLink]="['/pokemon', pokemon?.id]" class="text-muted">More Info</a>
         </p>
       </div>
     </div>

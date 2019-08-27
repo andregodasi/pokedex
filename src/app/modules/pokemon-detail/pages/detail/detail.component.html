@@ -1,0 +1,79 @@
+<div *ngIf="pokemonJSON?.id" [ngClass]="typesPokemon[0] + ' ' + typesPokemon[1] + ' ' + 'gradient'" class="pb-2">
+  <div>
+    <header class="container">
+      <div>
+        <h1 id="name-pokemon">#{{idPokemon}} {{namePokemonCamel}}</h1>
+        <p id="description-pokemon">{{descriptionPokemon}}</p>
+        <ul id="type-pokemon" style="padding:0;">
+          <div *ngFor="let type of typesPokemon" class="types d-block">
+            <li class="border d-block" [ngClass]="[type,'type']">
+              {{type}}
+            </li>
+          </div>
+          <div class="types d-block">
+            <i title="Favorite" (click)="changeFavorite(pokemonJSON)"
+              class="favorite {{pokemonJSON?.favorite ? 'fas fa-star' : 'far fa-star'}} text-white"></i>
+          </div>
+        </ul>
+      </div>
+    </header>
+
+    <div id="image-pokemon">
+      <img src={{urlImagem}} />
+    </div>
+  </div>
+  <div id="content-pokemon">
+    <div class="horizontal-scroll">
+      <nav id="main-nav">
+        <div id="about" (click)="changeFocoNavItem($event)"
+          [ngClass]="navItemSelect === 'about' ? 'navItemSelect' : null">
+          About
+        </div>
+        <div id="status" (click)="changeFocoNavItem($event)"
+          [ngClass]="navItemSelect === 'status' ? 'navItemSelect' : null">
+          Status base
+        </div>
+      </nav>
+    </div>
+
+    <!-- Menu About -->
+    <div *ngIf="navItemSelect === 'about'" id="about" class="content">
+      <div>
+        <p style="margin-top:5px;margin-bottom:0px;">{{textPokemon}}</p>
+      </div>
+      <div id="names-data-container">
+        <p>Height:</p>
+        <p>Weight:</p>
+        <p>Abiliities:</p>
+      </div>
+      <div id="values-data-container">
+        <p>{{heightPokemon | formatHeight}}</p>
+        <p>{{weightPokemon | toKg}} Kg</p>
+        <p>
+          <span *ngFor="let abiliity of abiliitiesPokemon">
+            <span *ngIf="abiliitiesPokemon[abiliitiesPokemon.length-1].ability.name !== abiliity?.ability.name">
+              {{abiliity?.ability?.name}}, </span>
+            <span
+              *ngIf="abiliitiesPokemon[abiliitiesPokemon.length-1].ability.name === abiliity?.ability?.name">{{abiliity.ability.name}}</span>
+          </span>
+        </p>
+      </div>
+    </div>
+
+    <!-- Menu Status Base -->
+    <div *ngIf="navItemSelect === 'status'" id="status" class="content">
+      <div id="names-data-container">
+        <p>HP:</p>
+        <p>Attack:</p>
+        <p>Defense:</p>
+        <p>Special Attack:</p>
+        <p>Special defense:</p>
+        <p>Speed:</p>
+      </div>
+      <div id="values-data-container">
+        <p *ngFor="let status of statusBase">{{status.base_stat}}</p>
+      </div>
+    </div>
+  </div>
+
+</div>

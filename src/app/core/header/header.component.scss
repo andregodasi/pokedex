@@ -17,6 +17,13 @@ header {
 .container-imgs {
   display: flex;
   justify-content: flex-start;
-  padding-top: 5px;
   padding-left: 10px;
+}
+
+.border-bottom-custom {
+  border-bottom: 1px solid #000!important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
