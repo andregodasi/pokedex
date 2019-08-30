@@ -6,6 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
+    "gh-pages": "ng build --prod --base-href 'https://andregodasi.github.io/pokedex/'",
+    "ngh": "ngh",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },

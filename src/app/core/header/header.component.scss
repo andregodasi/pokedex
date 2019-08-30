@@ -1,6 +1,9 @@
 header {
   height: 60px;
-  background: var(--color-default);
+  background: url("./../../../assets/img/line-header.svg") no-repeat;
+  background-position: bottom;
+  background-size: 100% 28px;
+  background-color: var(--color-default);
 }
 
 .img-main {
@@ -18,10 +21,6 @@ header {
   display: flex;
   justify-content: flex-start;
   padding-left: 10px;
-}
-
-.border-bottom-custom {
-  border-bottom: 1px solid #000!important;
 }
 
 .cursor-pointer {
