@@ -1,6 +1,6 @@
 <div class="d-flex justify-content-between flex-column w-100 h-100">
   <div>
-    <header class="shadow d-flex justify-content-between align-items-center">
+    <header class="d-flex justify-content-between align-items-center">
       <div class="container-imgs">
         <img [routerLink]="['/home']" class="img-main cursor-pointer" src="./assets/img/btn-main.png">
         <img class="img-small" src="./assets/img/btn-small1.png">
@@ -11,9 +11,15 @@
         <img [routerLink]="['/home']" class="img-main cursor-pointer" src="./assets/img/pokedex.png">
       </div>
     </header>
-    <router-outlet></router-outlet>
+    <main class="main-container">
+      <div class="frame-container">
+        <div class="content-container">
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </main>
   </div>
-  <div class="h-footer">
+  <div>
     <app-footer></app-footer>
   </div>
 </div>
