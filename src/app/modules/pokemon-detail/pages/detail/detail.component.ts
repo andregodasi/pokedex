@@ -1,7 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { PokemonService } from 'src/app/core/services/pokemon.service';
 import { ActivatedRoute } from '@angular/router';
 import { switchMap } from 'rxjs/operators';
+import { StateFooterService } from 'src/app/core/footer/state-footer.service';
+import { Subscription } from 'rxjs';
 
 
 @Component({
@@ -9,7 +11,7 @@ import { switchMap } from 'rxjs/operators';
   templateUrl: './detail.component.html',
   styleUrls: ['./detail.component.scss']
 })
-export class DetailComponent implements OnInit {
+export class DetailComponent implements OnInit, OnDestroy {
   namePokemon: string;
   pokemonJSON: any;
   idPokemon: number;
@@ -23,10 +25,14 @@ export class DetailComponent implements OnInit {
   navItemSelect = 'about';
   namePokemonCamel: string;
   statusBase: any[] = [];
+  subscription = new Subscription();
+  location = 'pokemonLink';
+  target = 'pokemon';
 
   constructor(
     private pokemonService: PokemonService,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private stateFooterService: StateFooterService
   ) { }
 
   ngOnInit() {
@@ -44,6 +50,21 @@ export class DetailComponent implements OnInit {
         this.getAbiliities(this.pokemonJSON);
         this.getStatusBase(this.pokemonJSON);
       });
+
+    this.subscription.add(this.stateFooterService.previous.subscribe(e => {
+
+      if (window.innerWidth > 480) {
+        (document.getElementById('pokemonLink') as HTMLElement).click();
+      } else {
+        this.target = this.target === 'pokemon' ? 'detail' : 'pokemon';
+        this.scrollPage(this.target);
+      }
+    })).add(this.stateFooterService.next.subscribe(e => {
+      this.navItemSelect = this.navItemSelect === 'about' ? 'status' : 'about';
+    }));
+  }
+  ngOnDestroy(): void {
+    this.subscription.unsubscribe();
   }
 
   changeFocoNavItem(event) {
@@ -145,6 +166,25 @@ export class DetailComponent implements OnInit {
       pokemon.favorite = true;
       this.pokemonService.addFavorite(pokemon.id);
     }
+  }
+
+  scrollTo(element, to, duration) {
+    if (duration <= 0) { return; }
+    const difference = to - element.scrollTop;
+    const perTick = difference / duration * 10;
+
+    setTimeout(() => {
+      element.scrollTop = element.scrollTop + perTick;
+      if (element.scrollTop === to) { return; }
+      this.scrollTo(element, to, duration - 10);
+    }, 10);
+  }
+
+  scrollPage(nameContainer: string): void {
+    const element = document.getElementById(nameContainer);
+    const targeOffset = element.offsetTop - 90;
+
+    this.scrollTo(document.getElementById('content-container'), targeOffset, 500);
   }
 
 }

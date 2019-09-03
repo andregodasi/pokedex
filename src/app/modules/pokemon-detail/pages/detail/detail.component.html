@@ -1,4 +1,5 @@
-<div *ngIf="pokemonJSON?.id" [ngClass]="typesPokemon[0] + ' ' + typesPokemon[1] + '-secondary ' + 'gradient'" class="pb-2 container-detail">
+<div id="pokemon" *ngIf="pokemonJSON?.id"
+  [ngClass]="typesPokemon[0] + ' ' + typesPokemon[1] + '-secondary ' + 'gradient'" class="pb-2 container-detail">
   <div>
     <header class="container">
       <div>
@@ -6,7 +7,8 @@
         <p id="description-pokemon">{{descriptionPokemon}}</p>
         <ul id="type-pokemon" style="padding:0;">
           <div *ngFor="let type of typesPokemon" class="types d-block">
-            <li class="d-flex justify-content-center align-items-center border shadow bg-white" [ngClass]="[type+'-color','type']">
+            <li class="d-flex justify-content-center align-items-center border shadow bg-white"
+              [ngClass]="[type+'-color','type']">
               <span class="sidebar-menu {{type}}-icon"></span> {{type | titlecase}}
             </li>
           </div>
@@ -22,7 +24,7 @@
       <img src={{urlImagem}} />
     </div>
   </div>
-  <div id="content-pokemon">
+  <div id="detail">
     <div class="horizontal-scroll">
       <nav id="main-nav">
         <div id="about" (click)="changeFocoNavItem($event)"
@@ -76,4 +78,8 @@
     </div>
   </div>
 
+</div>
+
+<div class="d-none">
+  <a id="pokemonLink" routerLink="." fragment="pokemon"></a>
 </div>

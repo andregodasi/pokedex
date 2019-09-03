@@ -25,7 +25,7 @@
   align-items: center;
 }
 
-#content-pokemon {
+#detail {
   width: 95%;
   margin: 0 auto;
   border-radius: 50px;
@@ -127,7 +127,7 @@
 
 
 @media (min-width: 640px) {
-  #content-pokemon {
+  #detail {
     width: 70%;
   }
 }
