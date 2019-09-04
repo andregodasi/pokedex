@@ -2,10 +2,22 @@
   <div>
     <header class="d-flex justify-content-between align-items-center">
       <div class="container-imgs">
-        <img [routerLink]="['/home']" class="img-main cursor-pointer" src="./assets/img/btn-main.png">
-        <img class="img-small" src="./assets/img/btn-small1.png">
-        <img class="img-small" src="./assets/img/btn-small2.png">
-        <img class="img-small" src="./assets/img/btn-small3.png">
+        <a [routerLink]="['/home']" class="main-light-BG cursor-pointer">
+          <div class="main-light">
+            <div class="main-light-shine">
+              <div class="main-light-shiner"></div>
+            </div>
+          </div>
+        </a>
+        <div class="red-light">
+          <div class="red-light-inner"></div>
+        </div>
+        <div class="yellow-light">
+          <div class="yellow-light-inner"></div>
+        </div>
+        <div class="green-light">
+          <div class="green-light-inner"></div>
+        </div>
       </div>
       <div class="pr-2">
         <img [routerLink]="['/home']" class="img-main cursor-pointer" src="./assets/img/pokedex.png">
