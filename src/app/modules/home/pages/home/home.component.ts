@@ -9,7 +9,7 @@ import { ActivatedRoute } from '@angular/router';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent implements OnInit, AfterViewInit, OnDestroy {
+export class HomeComponent implements OnInit, OnDestroy {
 
   page: any;
   currentPage = 0;
@@ -42,16 +42,12 @@ export class HomeComponent implements OnInit, AfterViewInit, OnDestroy {
     }));
   }
 
-  ngAfterViewInit(): void {
-    window.scrollTo(0, 1);
-  }
-
-
   ngOnDestroy(): void {
     this.subscription.unsubscribe();
   }
 
   pageChange(page: number) {
+    console.log(this.pagination);
     this.currentPage = page;
     this.pokemonService.getPokemon(20 * (page - 1)).subscribe(data => {
       this.page = data;
@@ -76,6 +72,15 @@ export class HomeComponent implements OnInit, AfterViewInit, OnDestroy {
     const targeOffset = element.offsetTop - 90;
     const content = window.innerWidth > 480 ? document.documentElement : document.getElementById('content-container');
     this.scrollTo(content, targeOffset, 500);
+  }
+
+  getTotalPage() {
+
+    let totalPage = 0;
+    if (this.page && this.page.count) {
+      totalPage = Math.ceil(this.page.count / 20,);
+    }
+    return totalPage;
   }
 
 }

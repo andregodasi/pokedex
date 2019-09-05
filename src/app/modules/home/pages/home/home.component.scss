@@ -10,6 +10,13 @@
   cursor: pointer;
 }
 
+.current-page {
+  position: fixed;
+  bottom: 76px;
+  right: 22px;
+  font-weight: 600;
+}
+
 ::ng-deep {
   .ngx-pagination .current {
     background: var(--color-default)!important;

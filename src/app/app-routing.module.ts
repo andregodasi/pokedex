@@ -21,7 +21,8 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes, {
     scrollPositionRestoration: 'enabled',
     anchorScrolling: 'enabled',
-    scrollOffset: [0, 64] // [x, y]
+    scrollOffset: [0, 64],
+    onSameUrlNavigation: 'reload'
   })],
   exports: [RouterModule]
 })
