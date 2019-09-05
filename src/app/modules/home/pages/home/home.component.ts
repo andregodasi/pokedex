@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy, ViewChild } from '@angular/core';
+import { Component, OnInit, OnDestroy, ViewChild, AfterViewInit } from '@angular/core';
 import { PokemonService } from 'src/app/core/services/pokemon.service';
 import { StateFooterService } from 'src/app/core/footer/state-footer.service';
 import { Subscription } from 'rxjs';
@@ -9,7 +9,7 @@ import { ActivatedRoute } from '@angular/router';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent implements OnInit, OnDestroy {
+export class HomeComponent implements OnInit, AfterViewInit, OnDestroy {
 
   page: any;
   currentPage = 0;
@@ -19,7 +19,7 @@ export class HomeComponent implements OnInit, OnDestroy {
     private pokemonService: PokemonService,
     private readonly route: ActivatedRoute,
     private stateFooterService: StateFooterService
-    ) { }
+  ) { }
 
   ngOnInit() {
     const pageDetail = this.route.snapshot.queryParamMap.get('page');
@@ -38,9 +38,14 @@ export class HomeComponent implements OnInit, OnDestroy {
         aClick.click();
       }
     })).add(this.stateFooterService.home.subscribe(e => {
-        this.scrollPage('container-pagination');
+      this.scrollPage('container-pagination');
     }));
   }
+
+  ngAfterViewInit(): void {
+    window.scrollTo(0, 1);
+  }
+
 
   ngOnDestroy(): void {
     this.subscription.unsubscribe();
