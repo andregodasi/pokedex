@@ -1,8 +1,8 @@
-<div class="container">
+<div id="container-pagination" class="container">
   <div class="row pt-2">
     <div class="col-sm-6 col-lg-3 mb-3 px-1 px-md-3"
       *ngFor="let pokemon of page?.results | paginate: { itemsPerPage: 20,currentPage: currentPage, totalItems: page?.count}">
-      <app-card-pokemon [name]="pokemon?.name"></app-card-pokemon>
+      <app-card-pokemon [name]="pokemon?.name" [page]="currentPage"></app-card-pokemon>
     </div>
   </div>
   <div class="col-lg-12 col-centered mt-3 d-md-flex justify-content-center d-none">

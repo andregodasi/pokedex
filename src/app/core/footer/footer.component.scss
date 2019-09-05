@@ -15,7 +15,7 @@ footer {
 .pagination-container {
   height: 30px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -27,6 +27,17 @@ span {
 .pagination-container span:first-child {
   transform: scaleX(-1);
   margin-right: 60px;
+  margin-left: 60px;
+}
+
+.btn-blue {
+  position: absolute;
+  height: 45px;
+  width: 55px;
+  right: 60px;
+  border-radius: 50%;
+  bottom: -18px;
+  border: 1px solid black;
 }
 
 @media only screen and (min-width: 480px) {

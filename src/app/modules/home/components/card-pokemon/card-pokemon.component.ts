@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
 })
 export class CardPokemonComponent implements OnInit {
   @Input() name;
+  @Input() page;
   loading = false;
   pokemon;
   descriptionPokemon;
@@ -37,7 +38,6 @@ export class CardPokemonComponent implements OnInit {
         this.loading = false;
       });
     }, err => this.loading = false);
-
   }
 
   selectPokemon(id) {

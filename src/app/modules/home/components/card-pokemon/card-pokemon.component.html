@@ -19,7 +19,7 @@
         <p class="card-text">{{infoPokemon | descriptionReduced:100:0}}</p>
         <hr>
         <p *ngIf="pokemon?.id" class="d-flex justify-content-end" >
-          <a [routerLink]="['/pokemon', pokemon?.id]" class="text-muted">More Info</a>
+          <a [routerLink]="['/pokemon', pokemon?.id]" [queryParams]="{ page: page }" class="text-muted">More Info</a>
         </p>
       </div>
     </div>

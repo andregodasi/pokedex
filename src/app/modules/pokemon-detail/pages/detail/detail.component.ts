@@ -1,6 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { PokemonService } from 'src/app/core/services/pokemon.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { switchMap } from 'rxjs/operators';
 import { StateFooterService } from 'src/app/core/footer/state-footer.service';
 import { Subscription } from 'rxjs';
@@ -28,11 +28,14 @@ export class DetailComponent implements OnInit, OnDestroy {
   subscription = new Subscription();
   location = 'pokemonLink';
   target = 'pokemon';
+  page;
 
   constructor(
     private pokemonService: PokemonService,
     private route: ActivatedRoute,
-    private stateFooterService: StateFooterService
+    private stateFooterService: StateFooterService,
+    private router: Router,
+    private activatedRoute: ActivatedRoute,
   ) { }
 
   ngOnInit() {
@@ -61,7 +64,11 @@ export class DetailComponent implements OnInit, OnDestroy {
       }
     })).add(this.stateFooterService.next.subscribe(e => {
       this.navItemSelect = this.navItemSelect === 'about' ? 'status' : 'about';
+    })).add(this.stateFooterService.home.subscribe(e => {
+      this.router.navigate(['home'], { queryParams: { page: this.page }});
     }));
+
+    this.getPage();
   }
   ngOnDestroy(): void {
     this.subscription.unsubscribe();
@@ -185,6 +192,12 @@ export class DetailComponent implements OnInit, OnDestroy {
     const targeOffset = element.offsetTop - 90;
 
     this.scrollTo(document.getElementById('content-container'), targeOffset, 500);
+  }
+
+  getPage() {
+    this.activatedRoute.queryParams.subscribe(param => {
+      this.page = param.page;
+    });
   }
 
 }

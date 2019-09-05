@@ -18,4 +18,8 @@ export class FooterComponent {
     this.stateFooterService.next.emit();
   }
 
+  onHome() {
+    this.stateFooterService.home.emit();
+  }
+
 }

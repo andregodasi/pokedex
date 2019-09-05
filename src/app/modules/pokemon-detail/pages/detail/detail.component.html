@@ -5,7 +5,7 @@
       <div>
         <h1 id="name-pokemon">#{{idPokemon}} {{namePokemonCamel}}</h1>
         <p id="description-pokemon">{{descriptionPokemon}}</p>
-        <ul id="type-pokemon" style="padding:0;">
+        <ul id="type-pokemon" class="p-0">
           <div *ngFor="let type of typesPokemon" class="types d-block">
             <li class="d-flex justify-content-center align-items-center border shadow bg-white"
               [ngClass]="[type+'-color','type']">
@@ -43,22 +43,24 @@
       <div>
         <p style="margin-top:5px;margin-bottom:0px;">{{textPokemon}}</p>
       </div>
-      <div id="names-data-container">
-        <p>Height:</p>
-        <p>Weight:</p>
-        <p>Abiliities:</p>
-      </div>
-      <div id="values-data-container">
-        <p>{{heightPokemon | formatHeight}}</p>
-        <p>{{weightPokemon | toKg}} Kg</p>
-        <p>
-          <span *ngFor="let abiliity of abiliitiesPokemon">
-            <span *ngIf="abiliitiesPokemon[abiliitiesPokemon.length-1].ability.name !== abiliity?.ability.name">
-              {{abiliity?.ability?.name}}, </span>
-            <span
-              *ngIf="abiliitiesPokemon[abiliitiesPokemon.length-1].ability.name === abiliity?.ability?.name">{{abiliity.ability.name}}</span>
-          </span>
-        </p>
+      <div class="w-100 d-flex mt-2">
+        <div id="names-data-container">
+          <p>Height:</p>
+          <p>Weight:</p>
+          <p>Abiliities:</p>
+        </div>
+        <div id="values-data-container">
+          <p>{{heightPokemon | formatHeight}}</p>
+          <p>{{weightPokemon | toKg}} Kg</p>
+          <p>
+            <span *ngFor="let abiliity of abiliitiesPokemon">
+              <span *ngIf="abiliitiesPokemon[abiliitiesPokemon.length-1].ability.name !== abiliity?.ability.name">
+                {{abiliity?.ability?.name}}, </span>
+              <span
+                *ngIf="abiliitiesPokemon[abiliitiesPokemon.length-1].ability.name === abiliity?.ability?.name">{{abiliity.ability.name}}</span>
+            </span>
+          </p>
+        </div>
       </div>
     </div>
 

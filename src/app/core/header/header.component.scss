@@ -80,9 +80,17 @@ header {
 }
 
 @keyframes colorchange {
-  0%   { background-color: #00c2d5; }
-  50%  { background-color: #78F4FF; }
-  100% { background-color: #00c2d5; }
+  0% {
+    background-color: #00c2d5;
+  }
+
+  50% {
+    background-color: #78F4FF;
+  }
+
+  100% {
+    background-color: #00c2d5;
+  }
 }
 
 .main-light-shine {
@@ -184,6 +192,62 @@ header {
   -webkit-border-radius: 50px;
   border-radius: 50%;
   z-index: 3;
+}
+
+.frame-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.frame-header div {
+  height: 6px;
+  width: 6px;
+  background: var(--color-default);
+  border: 1px solid black;
+  border-radius: 50%;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.frame-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-itens{
+  height: 6px;
+  width: 6px;
+  background: #000;
+  border: 1px solid #000;
+  border-radius: 50%;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.footer-container-hr {
+  margin-right: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-container-hr hr {
+  border: 1px solid #000;
+  width: 7px;
+  transform: rotate(300deg);
+  bottom: 0;
 }
 
 @media only screen and (min-width: 480px) {
