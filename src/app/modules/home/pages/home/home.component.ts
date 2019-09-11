@@ -78,7 +78,7 @@ export class HomeComponent implements OnInit, OnDestroy {
 
     let totalPage = 0;
     if (this.page && this.page.count) {
-      totalPage = Math.ceil(this.page.count / 20,);
+      totalPage = Math.ceil(this.page.count / 20);
     }
     return totalPage;
   }
