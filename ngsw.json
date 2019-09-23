@@ -1,0 +1,122 @@
+{
+  "configVersion": 1,
+  "timestamp": 1569200247309,
+  "index": "https://andregodasi.github.io/pokedex/pokedex/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "https://andregodasi.github.io/pokedex/4-es5.a46dea503faea4cfb31e.js",
+        "https://andregodasi.github.io/pokedex/5-es2015.ab86bbde369ec73e5441.js",
+        "https://andregodasi.github.io/pokedex/5-es5.d8867245544a4bab1e97.js",
+        "https://andregodasi.github.io/pokedex/6-es2015.d34a9b0137986857b107.js",
+        "https://andregodasi.github.io/pokedex/common-es2015.19f96d46b3a3a4516f96.js",
+        "https://andregodasi.github.io/pokedex/common-es5.54189f57723751aa8897.js",
+        "https://andregodasi.github.io/pokedex/favicon.ico",
+        "https://andregodasi.github.io/pokedex/index.html",
+        "https://andregodasi.github.io/pokedex/main-es2015.fa472e66c39044da2ef9.js",
+        "https://andregodasi.github.io/pokedex/main-es5.e33a5b4877519623ce09.js",
+        "https://andregodasi.github.io/pokedex/manifest.webmanifest",
+        "https://andregodasi.github.io/pokedex/polyfills-es2015.c6cf33b434bb696568a2.js",
+        "https://andregodasi.github.io/pokedex/polyfills-es5.6ab67fc03a410b70c387.js",
+        "https://andregodasi.github.io/pokedex/runtime-es2015.3cf880aef847a6660a96.js",
+        "https://andregodasi.github.io/pokedex/runtime-es5.5b2a7ba5fc545445936a.js",
+        "https://andregodasi.github.io/pokedex/styles.58227ee4855d77a5f093.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "https://andregodasi.github.io/pokedex/assets/icons/icon-128x128.png",
+        "https://andregodasi.github.io/pokedex/assets/icons/icon-144x144.png",
+        "https://andregodasi.github.io/pokedex/assets/icons/icon-152x152.png",
+        "https://andregodasi.github.io/pokedex/assets/icons/icon-192x192.png",
+        "https://andregodasi.github.io/pokedex/assets/icons/icon-384x384.png",
+        "https://andregodasi.github.io/pokedex/assets/icons/icon-512x512.png",
+        "https://andregodasi.github.io/pokedex/assets/icons/icon-72x72.png",
+        "https://andregodasi.github.io/pokedex/assets/icons/icon-96x96.png",
+        "https://andregodasi.github.io/pokedex/assets/img/btn-main.png",
+        "https://andregodasi.github.io/pokedex/assets/img/btn-small1.png",
+        "https://andregodasi.github.io/pokedex/assets/img/btn-small2.png",
+        "https://andregodasi.github.io/pokedex/assets/img/btn-small3.png",
+        "https://andregodasi.github.io/pokedex/assets/img/icons/sidebar-menu.png",
+        "https://andregodasi.github.io/pokedex/assets/img/line-footer-mobile.svg",
+        "https://andregodasi.github.io/pokedex/assets/img/line-footer.svg",
+        "https://andregodasi.github.io/pokedex/assets/img/line-header-mobile.svg",
+        "https://andregodasi.github.io/pokedex/assets/img/line-header.svg",
+        "https://andregodasi.github.io/pokedex/assets/img/pokedex.png",
+        "https://andregodasi.github.io/pokedex/line-footer-mobile.725e851446f6b792dcc7.svg",
+        "https://andregodasi.github.io/pokedex/line-footer.7c3dc08d55bbc244ac75.svg",
+        "https://andregodasi.github.io/pokedex/line-header-mobile.f3f7147723aaa90808c8.svg",
+        "https://andregodasi.github.io/pokedex/line-header.360838900a7b6325a245.svg",
+        "https://andregodasi.github.io/pokedex/sidebar-menu.999f55dd84767b1daba1.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "https://andregodasi.github.io/pokedex/4-es5.a46dea503faea4cfb31e.js": "5e2e3aa6efb0beba5e0ddbd699d7caf5e1adb05e",
+    "https://andregodasi.github.io/pokedex/5-es2015.ab86bbde369ec73e5441.js": "cc3b2e3a98da8edae8c604143de10df0b88fa44a",
+    "https://andregodasi.github.io/pokedex/5-es5.d8867245544a4bab1e97.js": "26e7428dfec379d17c7187c80b18dfad8784d952",
+    "https://andregodasi.github.io/pokedex/6-es2015.d34a9b0137986857b107.js": "29d4540682bec9b54edd3b50cc5cf1c1daf11787",
+    "https://andregodasi.github.io/pokedex/assets/icons/icon-128x128.png": "6f70eaeebe6ecf4a2d7b3fb062c507da1d8f20a1",
+    "https://andregodasi.github.io/pokedex/assets/icons/icon-144x144.png": "d91664eaaca343db3c5209d2fa85afa9bb2c2486",
+    "https://andregodasi.github.io/pokedex/assets/icons/icon-152x152.png": "5c85a8dade293c68874c962ffbef1dfda3e68124",
+    "https://andregodasi.github.io/pokedex/assets/icons/icon-192x192.png": "f6bfe0cec28ebf62610a77c667c97ae6bfc9c578",
+    "https://andregodasi.github.io/pokedex/assets/icons/icon-384x384.png": "bb18ec6a327f57ce584ddd2036e6b7bc8ef372c0",
+    "https://andregodasi.github.io/pokedex/assets/icons/icon-512x512.png": "f23bd15f19265068571e1b4b76f5cdcbcb4e51d5",
+    "https://andregodasi.github.io/pokedex/assets/icons/icon-72x72.png": "91a6b3fca41b62b08f46b971e7a6b2d054ebdd87",
+    "https://andregodasi.github.io/pokedex/assets/icons/icon-96x96.png": "d4d83536275c75b432e1ba3424e118be675984f6",
+    "https://andregodasi.github.io/pokedex/assets/img/btn-main.png": "a8c1651d3964097ba0261cdbd32703be78a7a4b9",
+    "https://andregodasi.github.io/pokedex/assets/img/btn-small1.png": "288afa7a40702b17349c70024a2c7270eac48f57",
+    "https://andregodasi.github.io/pokedex/assets/img/btn-small2.png": "a7312ee1ed64917f1bf218c51914b9c98ae285ee",
+    "https://andregodasi.github.io/pokedex/assets/img/btn-small3.png": "2ca185d7112fa58b299355e5ee80fc346c9f1759",
+    "https://andregodasi.github.io/pokedex/assets/img/icons/sidebar-menu.png": "2fc17f685c6315cd4b49bd2aedb5272e444a4451",
+    "https://andregodasi.github.io/pokedex/assets/img/line-footer-mobile.svg": "ac6149a4d76edcd5dc3f6f7bc08c54e4d598b2b2",
+    "https://andregodasi.github.io/pokedex/assets/img/line-footer.svg": "3ce36321beda5c0f77aa7ffe1db46daffea38b91",
+    "https://andregodasi.github.io/pokedex/assets/img/line-header-mobile.svg": "4b2c72e462eb932bfa2d2c6b4eb82e2272f2a182",
+    "https://andregodasi.github.io/pokedex/assets/img/line-header.svg": "ac5529e2605e8dc3da1a977c758d5021bcfdb22e",
+    "https://andregodasi.github.io/pokedex/assets/img/pokedex.png": "4375023a65310696364a2b4a4602b5f96c77f2f8",
+    "https://andregodasi.github.io/pokedex/common-es2015.19f96d46b3a3a4516f96.js": "5d706e502d49f147dad5305dd994e4ca4cb60762",
+    "https://andregodasi.github.io/pokedex/common-es5.54189f57723751aa8897.js": "99088791e845d3c6d1ccdae5f18665d6a2fbabdc",
+    "https://andregodasi.github.io/pokedex/favicon.ico": "10e207f0a756d5c44c80bdc9de1e6bc9f16860f6",
+    "https://andregodasi.github.io/pokedex/index.html": "8819a0b966eccb5f8bb6582d3b56b9ec95ed478d",
+    "https://andregodasi.github.io/pokedex/line-footer-mobile.725e851446f6b792dcc7.svg": "ac6149a4d76edcd5dc3f6f7bc08c54e4d598b2b2",
+    "https://andregodasi.github.io/pokedex/line-footer.7c3dc08d55bbc244ac75.svg": "3ce36321beda5c0f77aa7ffe1db46daffea38b91",
+    "https://andregodasi.github.io/pokedex/line-header-mobile.f3f7147723aaa90808c8.svg": "4b2c72e462eb932bfa2d2c6b4eb82e2272f2a182",
+    "https://andregodasi.github.io/pokedex/line-header.360838900a7b6325a245.svg": "ac5529e2605e8dc3da1a977c758d5021bcfdb22e",
+    "https://andregodasi.github.io/pokedex/main-es2015.fa472e66c39044da2ef9.js": "29e2cd7e12e2a6fa21b94cbc9bdd2e8340ad602d",
+    "https://andregodasi.github.io/pokedex/main-es5.e33a5b4877519623ce09.js": "bab4f00c7b971c2f10809d5b52bbbc2b4eced1d7",
+    "https://andregodasi.github.io/pokedex/manifest.webmanifest": "e373e0d1456a27aa6787c832c4846f95ea55320a",
+    "https://andregodasi.github.io/pokedex/polyfills-es2015.c6cf33b434bb696568a2.js": "9c8cf20eee50bc65e4d948f7bc44718c2b05f516",
+    "https://andregodasi.github.io/pokedex/polyfills-es5.6ab67fc03a410b70c387.js": "750cc52fcd3eac7d7dc45b41308915d25de73c0a",
+    "https://andregodasi.github.io/pokedex/runtime-es2015.3cf880aef847a6660a96.js": "2801e708eb81ca3e6d77e68e0758eb4c08690f2a",
+    "https://andregodasi.github.io/pokedex/runtime-es5.5b2a7ba5fc545445936a.js": "94a01ddf5192f710602fa4eae701e3e623f2a2a7",
+    "https://andregodasi.github.io/pokedex/sidebar-menu.999f55dd84767b1daba1.png": "2fc17f685c6315cd4b49bd2aedb5272e444a4451",
+    "https://andregodasi.github.io/pokedex/styles.58227ee4855d77a5f093.css": "b27740a0e046295c965d523a22bb7d1fde480db6"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
