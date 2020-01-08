@@ -1,18 +1,22 @@
 # Pokedex
 
-This project features a Pokédex and was developed usingAangular and PWA concepts. View [demo](https://andregodasi.github.io/pokedex/).
+This project features a Pokédex and was developed using Angular and PWA concepts. View [demo](https://andregodasi.github.io/pokedex/).
+
 
 ## Project
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.0.
 
+
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run ng serve to start the dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the --prod flag to generate the production build.
+
 
 ## Demo images
 
@@ -28,6 +32,7 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 Credits
 ---
 
+Thanks to [PokeAPI](http://pokeapi.co/) for the Pokémon data, and of course to Nintendo, Game Freak, and The Pokémon Company for making those awesome series of games.
 
-Thanks to [PokeAPI](http://pokeapi.co/) for the Pokémon data, and of course to Nintendo, Game Freak, and The Pokémon Company for making such an awesome series of games.
+
 
